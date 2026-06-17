@@ -107,10 +107,19 @@
 
         /* --- Hero Section --- */
         .hero {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
             padding: 8rem 0;
             background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
             margin: 0 -2rem;
+            text-align: left;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 500px;
         }
 
         .hero h2 {
@@ -125,8 +134,17 @@
         .hero p {
             font-size: 1.25rem;
             color: #555;
-            max-width: 700px;
-            margin: 0 auto;
+        }
+
+        .hero-image {
+            flex: 0 0 300px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         /* --- About Section --- */
@@ -196,6 +214,11 @@
             nav ul li {
                 margin: 0 1rem;
             }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
             .hero h2 {
                 font-size: 2.2rem;
             }
@@ -220,8 +243,13 @@
 
     <main>
         <section class="hero" id="home">
-            <h2>Welcome!</h2>
-            <p>I'm AleksandraExploring the cosmos through wide binary star systems and the lens of Galactic Archaeology at the University of Utah.</p>
+            <div class="hero-text">
+                <h2>Undergraduate Physics Researcher</h2>
+                <p>Exploring the cosmos through wide binary star systems and the lens of Galactic Archaeology at the University of Utah.</p>
+            </div>
+            <div class="hero-image">
+                <img src="headshot.jpg" alt="Aleksandra Winkler Headshot">
+            </div>
         </section>
 
         <section id="about">
