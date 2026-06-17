@@ -3,13 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Free GitHub Website</title>
+    <title>My Website</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        /* Basic reset to clear default margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* The header container holds your name and the menu */
+        header {
+            background-color: #fff;
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eaeaea;
+        }
+
+        /* Making your name big and bold */
+        .logo h1 {
+            font-size: 2.5rem;
+            color: #111;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        /* Changes link color when you hover over it */
+        nav ul li a:hover {
+            color: #0076ff;
+        }
+
+        /* Main content area */
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new website hosted on GitHub Pages.</p>
+
+    <header>
+        <div class="logo">
+            <h1>YOUR NAME</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to my site</h2>
+            <p>This is where your main content or latest updates will go. The layout above uses Flexbox to perfectly balance your massive name on the left and your clickable pages on the right.</p>
+        </section>
+    </main>
+
 </body>
 </html>
