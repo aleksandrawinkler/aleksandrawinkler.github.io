@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleksandra Winkler | Academic Portfolio</title>
     <style>
-        /* --- Modern Academic Styles --- */
         :root {
-            --primary-color: #003057; /* Deep Navy */
+            --primary-color: #003057;
             --accent-color: #0076ff;
             --text-color: #333;
             --bg-color: #fcfcfc;
@@ -15,35 +14,12 @@
             --border-color: #eaeaea;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * {margin: 0;padding: 0;box-sizing: border-box;}
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html {scroll-behavior: smooth;}
 
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        /* --- Header & Navigation --- */
-        header {
-            background-color: #fff;
-            padding: 1.5rem 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+        body {font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;line-height: 1.7; color: var(--text-color);background-color: var(--bg-color);}
+        header {background-color: #fff; padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000;}
 
         .logo h1 {
             font-size: 1.8rem;
@@ -69,11 +45,7 @@
             transition: color 0.3s ease;
         }
 
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-
-        /* --- Main Content --- */
+        nav ul li a:hover {color: var(--accent-color);}
         main {
             max-width: 1000px;
             margin: 0 auto;
@@ -105,40 +77,17 @@
             margin-top: 0.5rem;
         }
 
-        /* --- Hero Section --- */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 4rem;
-            padding: 8rem 0;
-            background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
-            margin: 0 -2rem;
-            text-align: left;
-        }
+        .hero {display: flex;align-items: center;justify-content: center;gap: 4rem;padding: 8rem 0;background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);margin: 0 -2rem;text-align: left;}
 
-        .hero-text {
-            flex: 1;
-            max-width: 500px;
-        }
+        .hero-text {flex: 1;max-width: 500px;}
 
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+        .hero h2 {font-size: 3rem;margin-bottom: 1rem;}
 
-        .hero h2::after {
-            display: none;
-        }
+        .hero h2::after {display: none;}
 
-        .hero p {
-            font-size: 1.25rem;
-            color: #555;
-        }
+        .hero p {font-size: 1.25rem;color: #555;}
 
-        .hero-image {
-            flex: 0 0 300px;
-        }
+        .hero-image {flex: 0 0 300px;}
 
         .hero-image img {
             width: 100%;
@@ -146,14 +95,10 @@
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-
-        /* --- About Section --- */
         .about-content {
             display: grid;
             gap: 2rem;
         }
-
-        /* --- Research Section --- */
         .research-item {
             background: var(--section-bg);
             padding: 2rem;
@@ -177,9 +122,7 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
-
-                /* --- Resume Section --- */
-        .Resume-item {
+        .cv-item {
             background: var(--section-bg);
             padding: 2rem;
             border-radius: 8px;
@@ -187,7 +130,7 @@
             margin-top: 1rem;
         }
 
-        .Resume-item h3 {
+        .cv-item h3 {
             color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
@@ -202,8 +145,6 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
-
-        /* --- Contact Section --- */
         .contact-info {
             text-align: center;
             font-size: 1.2rem;
@@ -218,16 +159,12 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
-
-        /* --- Footer --- */
         footer {
             text-align: center;
             padding: 3rem;
             color: #888;
             font-size: 0.9rem;
         }
-
-        /* --- Responsive --- */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -261,7 +198,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#cv">cv</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -294,7 +231,7 @@
             <div class="research-item">
                 <h3>High-Resolution Stellar Spectra of Wide Binary Systems</h3>
                 <p>Currently, I am conducting research under the mentorship of <strong>Dr. Catherine Manea</strong>, an NSF Astronomy and Astrophysics Postdoctoral Fellow at the University of Utah. Our work focuses on the study of wide binary star systems.</p>
-                <p>By analyzing high-resolution stellar spectra for each star in these pairs, we aim to study chemical signatures that provide insights into the history of the system and the environments they are formed from. These methods are part of a field often referred to as Galactic Archaeology.</p> 
+                <p>By analyzing high-resolution stellar spectra for each star in these pairs, we aim to study chemical signatures that provide insights into the history of the system and the environments they are formed from. These methods are part of a field often referred to as Galactic Archaeology. We analyze raw stellar spectra by performing line-by-line differential abundance analysis to gather high precision chemical abundances of stars.</p> 
                 <p>Wide binaries form from the same molecular cloud so we generally expect the pair to be compositionally homogeneous. In particular, we have discovered a system where one star in the binary is greatly enhanced with lithium. We aim to explain the reasoning for this through several thorough tests.</p>
             </div>
 
@@ -304,10 +241,10 @@
             </div>
         </section>
 
-         <section id="resume">
-            <h2>Resume</h2>
-            <div class="resume-item">
-                <embed src="resume_2026.pdf" type="application/pdf" width="100%" height="600px" />
+         <section id="CV">
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-item">
+                <embed src="cv_2026.pdf" type="application/pdf" width="100%" height="600px" />
             </div>
         </section>
 
